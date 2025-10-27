@@ -55,7 +55,7 @@ class Review extends StatelessWidget{
     );
     final estrella =Container(
       margin: EdgeInsets.only(
-          right: 5
+          right: 3
       ),
       child: Icon(
         Icons.star,

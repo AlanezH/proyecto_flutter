@@ -2,8 +2,10 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:proyecto_flutter/card_image.dart';
 import 'package:proyecto_flutter/description_place.dart';
 import 'package:proyecto_flutter/gradient_back.dart';
+import 'package:proyecto_flutter/home_app_bar.dart';
 import 'package:proyecto_flutter/review.dart';
 import 'package:proyecto_flutter/review_list.dart';
 
@@ -12,7 +14,7 @@ class MyHome extends StatelessWidget{
   Widget build (BuildContext context){
     final descriptionPlace =Container(
       margin: EdgeInsets.only(
-        top: 250,
+        top: 300,
         left: 30,
         right: 30
       ),
@@ -40,7 +42,8 @@ class MyHome extends StatelessWidget{
     return Scaffold(
       body:Stack(
         children: <Widget>[
-          GradientBack()
+          listView,
+          HomeAppBar("Popular")
         ],
       )
     );
